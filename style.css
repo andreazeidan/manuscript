@@ -7,7 +7,9 @@ html{
 	/* Declare them: */
 	--paragraph-margin: 7rem;;
 	--blockquote-color: blue;
-	--
+	--doc-margin:5rem;
+	--second-margin: 25rem;
+	--third-margin: 50rem;
 }
 
 
@@ -37,7 +39,17 @@ hgroup h1:nth-child(3) {
   text-align: right;
 }
 
+section:nth-of-type(odd) {
+    margin-inline-start: var(--doc-margin);
+}
 
+section:nth-of-type(even) {
+    margin-inline-start: var(--second-margin);
+}
+
+section {
+	max-width: 80ch;
+}
 
 body {
 	font-family: 'Stack Sans Text', sans-serif;
@@ -74,19 +86,28 @@ strong {
 blockquote p {
 	font-family:'Sedgwick Ave';
 	font-size: 1.5rem;
-	line-height: 2.5rem;
+	line-height: 3rem;
 	color: blue;
+	margin-left: 4rem;
+}
+blockquote.beauty p:nth-of-type(2) {
+    padding-left: 12rem;
+}
+blockquote.beauty p:nth-of-type(4) {
+    padding-left: 12rem;
+}
+blockquote.beauty p:nth-of-type(6) {
+    padding-left: 12rem;
+}
+blockquote.beauty p:nth-of-type(6) {
+    padding-left: 12rem;
 }
 
-blockquote p:nth-of-type(2) {
-    padding-left: 12rem;
+blockquote.questions p {
+  display: inline-block;
 }
-blockquote p:nth-of-type(4) {
-    padding-left: 12rem;
-}
-blockquote p:nth-of-type(6) {
-    padding-left: 12rem;
-}
+
+
 em {
 	font-weight: bold;
 	font-family: DM Serif Text;
@@ -97,8 +118,17 @@ em {
 .design{
 font-family:'Sedgwick Ave', serif;
 font-size: 10rem;
+color: blue;
 }
 
+.design-for-s{
+font-family:'Sedgwick Ave', serif;
+font-size: 10rem;
+margin-left: -0.14em;
+}
+.judgement{
+	color:red;
+}
 .h3italic{
 font-family:'Sedgwick Ave', serif;
 font-size: 4.1rem;

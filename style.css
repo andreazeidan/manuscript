@@ -10,6 +10,8 @@ html{
 	--
 }
 
+
+
 header{
 	block-size: 100vh;
 	inline-size: 100vw
@@ -35,11 +37,12 @@ hgroup h1:nth-child(3) {
   text-align: right;
 }
 
+
+
 body {
 	font-family: 'Stack Sans Text', sans-serif;
 }
 p {
-	font-family: 'Stack Sans Text', sans-serif;
 	font-size: 1rem;
 	line-height: 1.7rem;
 }
@@ -50,9 +53,7 @@ nav {
 	color:blue;
 	line-height: 3rem;
 }
-h1,h2,h3 {
-	font-family: 'Stack Sans Text', sans-serif;
-}
+
 h1 {
 	font-size: 10rem;
 	line-height: 10rem;
@@ -63,7 +64,7 @@ h2 {
 	color:red
 }
 h3 {
-	font-size: 4rem;
+	font-size: 3rem;
 }
 
 strong {
@@ -74,9 +75,18 @@ blockquote p {
 	font-family:'Sedgwick Ave';
 	font-size: 1.5rem;
 	line-height: 2.5rem;
-	color: blue
+	color: blue;
 }
 
+blockquote p:nth-of-type(2) {
+    padding-left: 12rem;
+}
+blockquote p:nth-of-type(4) {
+    padding-left: 12rem;
+}
+blockquote p:nth-of-type(6) {
+    padding-left: 12rem;
+}
 em {
 	font-weight: bold;
 	font-family: DM Serif Text;
@@ -98,3 +108,6 @@ a:link{
 	text-decoration: underline;
 	color:blue;
 }
+
+
+

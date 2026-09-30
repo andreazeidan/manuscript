@@ -1,143 +1,136 @@
-html{
-	padding-block-start: 3rem;
-	padding-inline-start: 5rem;
-}
-
 :root {
-	/* Declare them: */
-	--paragraph-margin: 7rem;;
-	--blockquote-color: blue;
-	--doc-margin:5rem;
-	--second-margin: 25rem;
-	--third-margin: 50rem;
+  --blue: blue;
+  --red: red;
+  --link-color: color-mix(in srgb, var(--red), var(--blue));
+  --font-body: 'Stack Sans Text', sans-serif;
+  --font-quote: 'Sedgwick Ave', serif;
+  --width: 80ch;
+  --large-width: calc(1.5 * var(--width));
+  --second-margin: 20rem;
 }
 
-
-
-header{
-	block-size: 100vh;
-	inline-size: 100vw
-}
-
-hgroup {
-max-inline-size: 83%;
-margin-inline: auto;
-margin-block-end: 3rem;
-padding-inline-end: 9rem;
-padding-inline-start: 9rem;
-}
-
-hgroup h1:nth-child(1) {
-  text-align: left;
-}
-
-hgroup h1:nth-child(2) {
-  text-align: center;
-}
-
-hgroup h1:nth-child(3) {
-  text-align: right;
-}
-
-section:nth-of-type(odd) {
-    margin-inline-start: var(--doc-margin);
-}
-
-section:nth-of-type(even) {
-    margin-inline-start: var(--second-margin);
-}
-
-section {
-	max-width: 80ch;
+html {
+  padding: 3rem 3rem 0 5rem;   /* top | right | bottom | left */
+  background-color: #F5F5F5;
 }
 
 body {
-	font-family: 'Stack Sans Text', sans-serif;
-}
-p {
-	font-size: 1rem;
-	line-height: 1.7rem;
+  font-family: var(--font-body);
 }
 
-nav {
-	text-decoration: underline;
-	font-size: 1.3rem;
-	color:blue;
-	line-height: 3rem;
+header {
+  margin-block-end: 2rem;
+}
+
+hgroup {
+  margin: 15vh 15vw;
+}
+
+hgroup h1:nth-child(2) {
+  text-align: right;
+  font-weight: bold;
 }
 
 h1 {
-	font-size: 10rem;
-	line-height: 10rem;
+  font-size: 10rem;
+  line-height: 1;
 }
 
 h2 {
-	font-size: 5.5rem;
-	color:red
+  font-size: 5.5rem;
+  color: var(--red);
+  max-width: 60rem;
+  padding-block: 1rem;
 }
+
 h3 {
-	font-size: 3rem;
+  font-size: 4rem;
+  font-weight: bold;
+  padding-block-end: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.7rem;
+  max-width: var(--width);
+  padding-block: 0.5rem;
+}
+
+nav {
+  font-size: 1.3rem;
+  line-height: 3rem;
+}
+
+a:link,
+a:visited {
+  text-decoration: underline;
+  color: var(--link-color);
 }
 
 strong {
-	font-weight: bold;
-	font-size: 1.7rem;
+  font-size: 1.7rem;
 }
+
+em {
+  color: var(--red);
+  font-family: var(--font-body);
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+.design,
+.design-for-s {
+  font-family: var(--font-quote);
+}
+
+.design {
+  color: var(--blue);
+}
+
+.design-for-s {
+  margin-left: -0.14em;
+}
+
+.judgement,
+.redquote p {
+  color: var(--red);
+}
+
+blockquote {
+  max-width: var(--large-width);
+}
+
 blockquote p {
-	font-family:'Sedgwick Ave';
-	font-size: 1.5rem;
-	line-height: 3rem;
-	color: blue;
-	margin-left: 4rem;
+  font-family: var(--font-quote);
+  font-size: 2rem;
+  line-height: 3.5rem;
+  color: var(--blue);
+  margin-left: 10rem;
 }
-blockquote.beauty p:nth-of-type(2) {
-    padding-left: 12rem;
-}
-blockquote.beauty p:nth-of-type(4) {
-    padding-left: 12rem;
-}
-blockquote.beauty p:nth-of-type(6) {
-    padding-left: 12rem;
-}
-blockquote.beauty p:nth-of-type(6) {
-    padding-left: 12rem;
+
+blockquote.beauty p:nth-of-type(even) {
+  padding-left: 12rem;
+  color: var(--red);
 }
 
 blockquote.questions p {
   display: inline-block;
 }
 
-
-em {
-	font-weight: bold;
-	font-family: DM Serif Text;
-	font-style: oblique;
-	font-size: 1.2rem;
+section {
+  margin-block: 5rem;
 }
 
-.design{
-font-family:'Sedgwick Ave', serif;
-font-size: 10rem;
-color: blue;
+section:nth-of-type(odd) {
+  color: var(--blue);
+  margin-inline-start: var(--second-margin);
 }
 
-.design-for-s{
-font-family:'Sedgwick Ave', serif;
-font-size: 10rem;
-margin-left: -0.14em;
-}
-.judgement{
-	color:red;
-}
-.h3italic{
-font-family:'Sedgwick Ave', serif;
-font-size: 4.1rem;
+section:nth-of-type(even) {
+  color: var(--red);
 }
 
-a:link{
-	text-decoration: underline;
-	color:blue;
+#reading section:last-child blockquote p:first-of-type {
+  margin-left: 0;
 }
-
-
-

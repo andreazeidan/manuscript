@@ -4,7 +4,7 @@
   --link-color: color-mix(in srgb, var(--red), var(--blue));
   --font-body: 'Stack Sans Text', sans-serif;
   --font-quote: 'Sedgwick Ave', serif;
-  --width: 60rem;
+  --width: 55rem;
   --large-width: calc(1.5 * var(--width));
 }
 
@@ -111,7 +111,7 @@ blockquote p {
 }
 
 blockquote.beauty p:nth-of-type(even) {
-  padding-left: 12rem;
+  padding-left: 10rem;
   color: var(--red);
   max-width: var(--width);
 }
@@ -122,11 +122,13 @@ blockquote.questions p {
 
 section {
   margin-block: 5rem;
-  margin-inline-start:5rem;
+  margin-inline-start:0rem;
+  max-width: var(--large-width);
 }
 
 section:nth-of-type(odd) {
   color: var(--blue);
+  margin-inline-start:20rem;
 }
 
 section:nth-of-type(even) {

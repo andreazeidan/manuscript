@@ -6,7 +6,7 @@
   --font-quote: 'Sedgwick Ave', serif;
   --width: 80ch;
   --large-width: calc(1.5 * var(--width));
-  --second-margin: 20rem;
+  --second-margin: 10rem;
 }
 
 html {

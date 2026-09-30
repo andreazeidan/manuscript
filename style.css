@@ -41,12 +41,11 @@ h2 {
   font-size: 5.5rem;
   color: var(--red);
   max-width: 60rem;
-  padding-block: 1rem;
+  padding-block: 0.8rem;
 }
 
 h3 {
-  font-size: 4rem;
-  font-weight: bold;
+  font-size: 4.5rem;
   padding-block-end: 1rem;
 }
 
@@ -70,6 +69,7 @@ a:visited {
 
 strong {
   font-size: 1.7rem;
+  font-weight: bold;
 }
 
 em {
@@ -77,7 +77,7 @@ em {
   font-family: var(--font-body);
   font-weight: bold;
   font-size: 3rem;
-  line-height: 1.1;
+  line-height: 0.5rem;
 }
 
 .design,
@@ -113,6 +113,7 @@ blockquote p {
 blockquote.beauty p:nth-of-type(even) {
   padding-left: 12rem;
   color: var(--red);
+  max-width: var(--width);
 }
 
 blockquote.questions p {

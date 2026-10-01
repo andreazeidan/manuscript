@@ -8,17 +8,15 @@
   --font-quote: 'Cormorant Upright', serif;
 
   --text: 1.3rem;
-  --text-em: 4rem;
   --text-h1: 10rem;
   --line-height-loose: 3.5rem;
 
-  --space: 1rem;
-  --space-s: calc(var(--space) * 2);
-  --space-m: calc(var(--space) * 3);
-  --space-l: calc(var(--space) * 7);
+  --space-s: 2rem;
+  --space-m: 3rem;
+  --space-l: 7rem;
 
-  --width: 65ch;
-  --indent: calc(var(--space) * 30);
+  --width: 50rem;
+  --indent: 30rem;
 }
 
 html {
@@ -58,7 +56,7 @@ h3 {
   float: left;
   position: sticky;
   top: var(--space-s);
-  max-width: calc(var(--indent) - var(--space) * 5);
+  max-width: var(--indent);
 }
 
 p {
@@ -93,7 +91,7 @@ strong {
 em {
   display: block;
   font-family: var(--font-body);
-  font-size: var(--text-em);
+  font-size: calc(var(--text) * 3);
   line-height: 4.4rem;
   font-style: normal;
   color: var(--red);
@@ -164,14 +162,12 @@ section.closing {
 .button,
 .button:link,
 .button:visited {
-  display: inline-block;
   font-size: var(--text);
   padding: 1rem;
   border: 0.1rem solid var(--red);
-  background-color: transparent;
+  background-color: var(--paper);
   color: var(--red);
   text-decoration: none;
-  transition: background-color 0.2s, color 0.2s;
 }
 
 .button:hover {
